@@ -47,7 +47,16 @@
 <script type="text/javascript">
     var clicks = 0;
     function onClick() {
-        clicks += 1;
+        <!--
+        #clicks += 1;
+        #document.getElementById("clicks").innerHTML = clicks;
+        -->
+        var clicks =  localStorage.getItem("on_load_counter");
+        if (clicks === null){
+            clicks = 0;
+        }
+        clicks ++;
+        localStorage.getItem("on_load_counter", clicks);
         document.getElementById("clicks").innerHTML = clicks;
     };
 </script>
