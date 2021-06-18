@@ -1,0 +1,128 @@
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.navbar {
+    height: 80px;
+    width: 100%;
+    background: purple;
+    text-decoration: plum;
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+    color: plum;
+}
+
+.navbar ul li a {
+    text-decoration: : none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar ul li a.active .navbar ul li a :hover {
+    background: purple;
+    border-radius: 2px;
+}
+.para{
+    color: white;
+}
+.wrapper.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+h1 {
+    color: purple;
+    font-size: 70px;
+    font-weight: bold;
+    width: 800px;
+    text-align: center;
+}
+
+h2 {
+    color:lightgrey;
+    font-size: 70px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.center .buttons {
+    margin: 35px 280px;
+}
+
+.buttons button {
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: plum;
+    background: purple;
+    border: 1px solid plum;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 5s;
+}
+
+
+.submit-btn{
+    
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin left: 25px;
+    background-color: purple;
+    border:none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 130%;
+
+ }
+
+#Registration form {
+    position: relative;
+    margin: 5%, auto;
+    height: 300px;
+    width: 600px;
+    background-color: #74075e98;
+    box-shadow: 0, 2px, 4px, #003004;
+}
+
+.leftbox {
+    position: relative;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 5px;
+}
+
+.offer {
+    position: relative;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 5px;
+}
