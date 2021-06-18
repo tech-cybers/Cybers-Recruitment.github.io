@@ -39,23 +39,27 @@
                          Click on the link below to get started </h3></p>
                          
                       <form action="Educateme.html">   
-                          <button type="submit" class="submit-btn" onClick="click()">Apply Now</button>
+                          <button type="submit" id="countButton" class="submit-btn" onClick="click()">Apply Now</button>
                           <p>Clicks: <a id="clicks">0</a></p>
                     </form>  
                 </div>
     </div>
 <script type="text/javascript">
    
-    function onClick() {
-        
-        var click =  localStorage.getItem('on_load_counter');
-        if (click === null){
-            click = 0;
-        }
-        click++;
-        localStorage.setItem("on_load_counter", click);
-        document.getElementById('clicks').innerHTML = click;
-    };
+    $("#countButton").on('click', function(e) {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+    	//Using this just to reset after every refresh :D 
+      localStorage.clickcount = parseInt($("#clicks").text());
+      localStorage.clickcount = Number(localStorage.clickcount) + 1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("clicks").innerHTML = localStorage.clickcount;
+  } else {
+    document.getElementById("clicks").innerHTML = "NaN";
+  }
+});
 </script>
 
 </body>
