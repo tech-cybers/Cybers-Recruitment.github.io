@@ -2,7 +2,7 @@
 
 A simple phishing education page. 
 
-Uploading Files to site: 
+Host your site for free on Git: 
   > Create a new repository and name it xxx.github.io
   > Upload files via ssh, bash - https option or manually using the upload link
   > Ensure your main html file is named 'index.html' and within the root folder. 
