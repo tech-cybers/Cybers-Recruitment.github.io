@@ -38,28 +38,23 @@
                         </ul>
                          Click on the link below to get started </h3></p>
                          
-                      <form action="Educateme.html">    
-                    <button type="submit"  class="submit-btn" >Apply Now</button>
-                    
+                      <form action="Educateme.html">   
+                          <button type="submit"  class="submit-btn"  onClick="click()">Apply Now</button>
+                          <p>Clicks: <a id="clicks">0</a></p>
                     </form>  
                 </div>
-
-               
-                       
-
-                    
-                    </div>
-                </div>
-
-
-
-
-                
-
+                                                   </div>
+                </div>  
         </div>
 
-
     </div>
+
+var clicks = 0;
+
+function onClick() {
+  clicks += 1;
+  document.getElementById("clicks").innerHTML = clicks;
+};
 
 </body>
 
