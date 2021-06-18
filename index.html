@@ -48,13 +48,13 @@
    
     function onClick() {
         
-        var clicks =  localStorage.getItem('on_load_counter');
-        if (clicks === null){
-            clicks = 0;
+        var click =  localStorage.getItem('on_load_counter');
+        if (click === null){
+            click = 0;
         }
-        clicks ++;
-        localStorage.setItem("on_load_counter", clicks);
-        document.getElementById("clicks").innerHTML = clicks;
+        click++;
+        localStorage.setItem("on_load_counter", click);
+        document.getElementById('clicks').innerHTML = click;
     };
 </script>
 
