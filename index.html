@@ -6,59 +6,53 @@
     <title>Women Techsters </title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body style=" background-image: url('b.jpeg'); background-size: cover;">
     <div class="wrapper">
         <nav class="navbar">
-            <img class="logo" src="a.png" height="200px" width="300px">
+            <img class="logo" src="a.png" height="80px" width="150px">
             <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Feedback</a></li>
+                <li><a class="active" href="#" style="text-decoration: none;">Home</a></li>
+                <li><a href="#" style="text-decoration: none;">About</a></li>
+                <li><a href="#" style="text-decoration: none;">Feedback</a></li>
             </ul>
         </nav>
 
         <div>
 
             <center><h1>Welcome to cybersters Recruiters</h1></center>
-            
-                <p><h3>
-                    Cyberstars recruiters is an IT recruitment agency which help African creatives to turn
-                    tech ideas into business realities.<br> We run accelerator programs and provide training
-                     to help them launch, grow and sustain businesses.
-                     <br>  We link our students with our partners in providing them an Internship role after the training Our objective is to build an
-                    <br>empowering platform that trains and certifies programmers to serve our nation and the continent's growing needs.
-                    <br> Our training covers:
-                    <ul style="list-style-type:disc">
-                    <li> Cybersecurity</li>
-                    <li> Data science</li>
-                     <li> Product design</li>
-                       <li>Web development</li>
-                       <li> Data Entry</li>
-                        </ul>
-                         Click on the link below to get started </h3></p>
-                         
-                      <form action="">   
-                          <button type="submit" class="submit-btn" onClick="click()">Apply Now</button>
-                          <p>Clicks: <a id="clicks" href="Educateme.html">0</a></p>
-                    </form>  
-                </div>
+            <p><h3>
+            Cyberstars recruiters is an IT recruitment agency which help African creatives to turn
+            tech ideas into business realities.<br> We run accelerator programs and provide training
+            to help them launch, grow and sustain businesses.
+            <br>  
+            We link our students with our partners in providing them an Internship role after the training Our objective is to build an
+            <br>
+            empowering platform that trains and certifies programmers to serve our nation and the continent's growing needs.
+            <br> Our training covers:
+            <ul style="list-style-type:disc">
+                <li> Cybersecurity</li>
+                <li> Data science</li>
+                <li> Product design</li>
+                <li>Web development</li>
+                <li> Data Entry</li>
+            </ul>
+            Click on the link below to get started </h3></p>
+            <form action="Educateme.html">
+                <button type="submit"  class="submit-btn" onClick="onClick()">Apply Now</button>
+                <p>Clicks: <a id="clicks">0</a></p>
+            </form>
+        </div>
     </div>
-    
     <script type="text/javascript">
-   
-    function onClick() {
-        
-        var click = localStorage.getItem('on_load_counter');
-        if (click === null){
-            click = 0;
-        }
-        click++;
-        localStorage.setItem("on_load_counter", click);
-        document.getElementById('clicks').innerHTML = click;
-    };
+        function onClick() {
+            var click =  localStorage.getItem('on_load_counter');
+            if (click === null){
+                click = 0;
+            }
+            click++;
+            localStorage.setItem("on_load_counter", click);
+            document.getElementById('clicks').innerHTML = click;
+        };
     </script>
-
 </body>
-
-</html> 
+</html>
